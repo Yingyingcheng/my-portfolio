@@ -43,7 +43,7 @@ export default function Projects() {
     <>
       <section
         id="proejct"
-        className="px-6 md:px-12 max-w-7xl mx-auto pt-5 pb-16"
+        className="px-6 md:px-12 max-w-7xl mx-auto pt-16 pb-16"
       >
         {/* 1. The Title - Centered above the grid */}
         <div className="flex flex-col items-center mb-12">

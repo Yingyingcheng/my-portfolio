@@ -24,7 +24,10 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="px-6 md:px-12 max-w-7xl mx-auto pt-5 pb-16">
+    <section
+      id="skills"
+      className="px-6 md:px-12 max-w-7xl mx-auto pt-16 pb-16"
+    >
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-6">
           <span className="text-[#8da399] uppercase tracking-[0.3em] text-xs font-bold mb-4 block">

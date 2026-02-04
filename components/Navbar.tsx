@@ -36,7 +36,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <nav className="flex justify-between items-center px-6 py-8 md:px-12 top-0 sticky bg-[#8da399]">
+      <nav className="flex justify-between items-center px-6 py-8 md:px-12 top-0 sticky z-50 bg-[#8da399]">
         <div className="font-bold text-amber-50 tracking-widest uppercase">
           Doris Cheng
         </div>

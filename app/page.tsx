@@ -40,6 +40,39 @@ export default function Home() {
       <Skills />
       {/* {Project} */}
       <Projects />
+      {/* --- Footer Section --- */}
+      <footer className="w-full py-10 text-amber-50 bg-[#8da399]">
+        <div className="flex flex-col items-center max-w-7xl mx-auto ">
+          <h2 className="text-xl font-bold uppercase tracking-wider leading-[0.8] text-center">
+            Contacts
+          </h2>
+
+          <div className="pt-5 text-sm flex gap-8 ">
+            <a
+              href="doris82717@gmail.com"
+              className="font-bold uppercase tracking-widest  hover:text-orange-600 transition-colors"
+            >
+              Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yingying-cheng/"
+              className="font-bold uppercase tracking-widest hover:text-orange-600 transition-colors"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/Yingyingcheng"
+              className="font-bold uppercase tracking-widest  hover:text-orange-600 transition-colors"
+            >
+              GitHub
+            </a>
+          </div>
+
+          <p className="pt-5 text-[10px] uppercase tracking-[0.5em]  font-bold text-center">
+            © 2026 Doris Cheng — Made With 🩵
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }

@@ -7,18 +7,18 @@ const projects = [
     tag: "Mobile App",
     description:
       "Upload your foodie picture here!\nLet AI calculates your meals.",
-    image: "/foodie-diary.png",
+    image: "foodie-diary.png",
     link: "https://foodiediary.vercel.app",
     git: "https://github.com/Yingyingcheng/Foodie-Diary",
   },
   {
-    title: "Foodie Diary",
-    subtitle: "AI Calories tracking app",
+    title: "MBTI Personality Test",
+    subtitle: "MBTI Personality Test Website",
     tag: "Mobile App",
-    description: "Upload your foodie picture here!",
-    image: "/foodie-diary.png",
-    link: "https://foodiediary.vercel.app/",
-    git: "https://github.com/Yingyingcheng/Foodie-Diary",
+    description: "Discover Your Personality Type!",
+    image: "MBTI.png",
+    link: "https://mbti-personality-test-one.vercel.app/",
+    git: "https://github.com/Yingyingcheng/MBTI_Personality_Test",
   },
   {
     title: "MBTI Personality Test",
@@ -68,11 +68,11 @@ export default function Projects() {
               key={index}
               className=" group text-center flex flex-col items-center justify-center p-6 transition-all duration-500 bg-amber-100"
             >
-              <div>
+              <div className="w-full aspect-video overflow-hidden mb-6">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="pb-5 w-full h-full object-cover transition-transform duration-700 group-hover:scale-90"
+                  className="pb-5 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-90"
                 />
               </div>
               <div className="font-medium text-3xl uppercase mb-6 text-[#8da399] group-hover:scale-90 transition-all duration-500">

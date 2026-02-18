@@ -16,10 +16,10 @@ const projects = [
     subtitle: "3D Flying Banana Bot",
     tag: "Mobile App",
     description:
-      "Your new best friend is a flying banana!\nShare your day in a retro 3D universe.",
+      "Your new friend is a y2k flying banana!\nShare your day in a retro 3D universe.",
     image: "/FlyingBanana.png",
-    link: "https://flying-bananas.vercel.app/",
-    git: "https://github.com/Yingyingcheng/flying-bananas",
+    link: "https://y2k-flying-bananas.vercel.app/",
+    git: "https://github.com/Yingyingcheng/y2k-flying-bananas",
   },
   {
     title: "MBTI Personality Test",

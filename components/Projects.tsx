@@ -12,6 +12,16 @@ const projects = [
     git: "https://github.com/Yingyingcheng/Foodie-Diary",
   },
   {
+    title: "Y2K Flying Banana",
+    subtitle: "3D Flying Banana Bot",
+    tag: "Mobile App",
+    description:
+      "Your new best friend is a flying banana!\nShare your day in a retro 3D universe.",
+    image: "/FlyingBanana.png",
+    link: "https://flying-bananas.vercel.app/",
+    git: "https://github.com/Yingyingcheng/flying-bananas",
+  },
+  {
     title: "MBTI Personality Test",
     subtitle: "MBTI Personality Test Website",
     tag: "Mobile App",
@@ -21,19 +31,13 @@ const projects = [
     git: "https://github.com/Yingyingcheng/MBTI_Personality_Test",
   },
   {
-    title: "MBTI Personality Test",
+    title: "Foodie Diary",
+    subtitle: "AI Calories tracking app",
     tag: "Mobile App",
-    description: "AI Calories tracking app",
-    image: "/foodie-diary.png",
-    link: "https://foodiediary.vercel.app/",
-    git: "https://github.com/Yingyingcheng/Foodie-Diary",
-  },
-  {
-    title: "MBTI Personality Test",
-    tag: "Mobile App",
-    description: "AI Calories tracking app",
-    image: "/foodie-diary.png",
-    link: "https://foodiediary.vercel.app/",
+    description:
+      "Upload your foodie picture here!\nLet AI calculates your meals.",
+    image: "foodie-diary.png",
+    link: "https://foodiediary.vercel.app",
     git: "https://github.com/Yingyingcheng/Foodie-Diary",
   },
 ];

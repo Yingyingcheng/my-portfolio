@@ -28,6 +28,8 @@ export default function Home() {
             </p>
             <Link
               href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#8da399] text-white px-10 py-5 font-bold uppercase tracking-widest hover:bg-orange-600 transition-all duration-300"
             >
               View My Protfolio
@@ -40,7 +42,7 @@ export default function Home() {
       {/* {Project} */}
       <Projects />
       {/* --- Footer Section --- */}
-      <footer className="w-full py-10 text-amber-50 bg-[#8da399]">
+      <footer id="contact" className="w-full py-10 text-amber-50 bg-[#8da399]">
         <div className="flex flex-col items-center max-w-7xl mx-auto ">
           <h2 className="text-xl font-bold uppercase tracking-wider leading-[0.8] text-center">
             Contacts

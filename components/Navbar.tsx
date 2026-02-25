@@ -27,11 +27,11 @@ export default function Navbar() {
             Project
           </Link>
           <Link
-            href="#work"
+            href="#contact"
             onClick={() => setIsOpen(false)}
             className="font-bold  uppercase tracking-widest"
           >
-            Work
+            Contact
           </Link>
         </div>
       </div>
@@ -43,6 +43,8 @@ export default function Navbar() {
         <div className="hidden md:flex space-x-8 font-bold text-amber-50 uppercase tracking-widest">
           <Link
             href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-amber-200 transition-colors"
           >
             Resume
@@ -53,8 +55,11 @@ export default function Navbar() {
           >
             Project
           </Link>
-          <Link href="#work" className="hover:text-amber-200 transition-colors">
-            Work
+          <Link
+            href="#contact"
+            className="hover:text-amber-200 transition-colors"
+          >
+            Contact
           </Link>
         </div>
         <button

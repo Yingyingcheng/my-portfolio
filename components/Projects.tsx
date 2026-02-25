@@ -16,7 +16,7 @@ const projects = [
     subtitle: "3D Flying Banana Bot",
     tag: "Mobile App",
     description:
-      "Your new friend is a y2k flying banana!\nShare your day in a retro 3D universe.",
+      "Your new friend is a y2k flying banana!\nShare your day in a retro 3D universe\nand play snake game with the banana.",
     image: "/FlyingBanana.png",
     link: "https://y2k-flying-bananas.vercel.app/",
     git: "https://github.com/Yingyingcheng/y2k-flying-bananas",
@@ -31,14 +31,14 @@ const projects = [
     git: "https://github.com/Yingyingcheng/MBTI_Personality_Test",
   },
   {
-    title: "Foodie Diary",
-    subtitle: "AI Calories tracking app",
+    title: "Y2K Flying Banana",
+    subtitle: "3D Flying Banana Bot",
     tag: "Mobile App",
     description:
-      "Upload your foodie picture here!\nLet AI calculates your meals.",
-    image: "foodie-diary.png",
-    link: "https://foodiediary.vercel.app",
-    git: "https://github.com/Yingyingcheng/Foodie-Diary",
+      "Your new friend is a y2k flying banana!\nShare your day in a retro 3D universe\nand play snake game with the banana.",
+    image: "/FlyingBanana.png",
+    link: "https://y2k-flying-bananas.vercel.app/",
+    git: "https://github.com/Yingyingcheng/y2k-flying-bananas",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function Projects() {
   return (
     <>
       <section
-        id="proejct"
+        id="project"
         className="px-6 md:px-12 max-w-7xl mx-auto pt-16 pb-16"
       >
         {/* 1. The Title - Centered above the grid */}
@@ -72,11 +72,11 @@ export default function Projects() {
               key={index}
               className=" group text-center flex flex-col items-center justify-center p-6 transition-all duration-500 bg-amber-100"
             >
-              <div className="w-full aspect-video overflow-hidden mb-6">
+              <div className="w-full overflow-hidden mb-6 flex items-center justify-center">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="pb-5 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-90"
+                  className="border-2 border-dashed border-[#8da399] hover:border-blue-300 max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-90"
                 />
               </div>
               <div className="font-medium text-3xl uppercase mb-6 text-[#8da399] group-hover:scale-90 transition-all duration-500">

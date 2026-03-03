@@ -11,34 +11,34 @@ const projects = [
     link: "https://foodiediary.vercel.app",
     git: "https://github.com/Yingyingcheng/Foodie-Diary",
   },
+
   {
     title: "Y2K Flying Banana",
     subtitle: "3D Flying Banana Bot",
     tag: "Mobile App",
     description:
-      "Your new friend is a y2k flying banana!\nShare your day in a retro 3D universe\nand play snake game with the banana.",
+      "Your new friend is y2k flying banana!\nShare your day in retro 3D universe\nand play snake game.",
     image: "/FlyingBanana.png",
     link: "https://y2k-flying-bananas.vercel.app/",
     git: "https://github.com/Yingyingcheng/y2k-flying-bananas",
   },
   {
+    title: "Doris Cheng",
+    subtitle: "My Portfolio",
+    tag: "Mobile App",
+    description: "Passinate at Web dev & design 🩷 🩶 🩵",
+    image: "/DorisCheng.png",
+    link: "https://dorischeng.vercel.app/",
+    git: "https://github.com/Yingyingcheng/my-portfolio",
+  },
+  {
     title: "MBTI Personality Test",
-    subtitle: "MBTI Personality Test Website",
+    subtitle: "Take your MBTI Test",
     tag: "Mobile App",
     description: "Discover Your Personality Type!",
     image: "MBTI.png",
     link: "https://mbti-personality-test-one.vercel.app/",
     git: "https://github.com/Yingyingcheng/MBTI_Personality_Test",
-  },
-  {
-    title: "Y2K Flying Banana",
-    subtitle: "3D Flying Banana Bot",
-    tag: "Mobile App",
-    description:
-      "Your new friend is a y2k flying banana!\nShare your day in a retro 3D universe\nand play snake game with the banana.",
-    image: "/FlyingBanana.png",
-    link: "https://y2k-flying-bananas.vercel.app/",
-    git: "https://github.com/Yingyingcheng/y2k-flying-bananas",
   },
 ];
 

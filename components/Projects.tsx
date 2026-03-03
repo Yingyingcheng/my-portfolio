@@ -6,7 +6,7 @@ const projects = [
     subtitle: "AI Calories tracking app",
     tag: "Mobile App",
     description:
-      "Upload your foodie picture here!\nLet AI calculates your meals",
+      "Upload your foodie picture here\nLet AI calculates your meals!",
     image: "foodie-diary.png",
     link: "https://foodiediary.vercel.app",
     git: "https://github.com/Yingyingcheng/Foodie-Diary",
@@ -17,7 +17,7 @@ const projects = [
     subtitle: "3D Flying Banana Bot",
     tag: "Mobile App",
     description:
-      "Your new friend is y2k flying banana!\nShare your day in retro 3D universe\nand play snake game",
+      "Your new friend is y2k flying banana\nShare your day in retro 3D universe!",
     image: "/FlyingBanana.png",
     link: "https://y2k-flying-bananas.vercel.app/",
     git: "https://github.com/Yingyingcheng/y2k-flying-bananas",

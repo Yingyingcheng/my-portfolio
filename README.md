@@ -2,9 +2,7 @@
 
 A personal portfolio website built with Next.js, React, and Tailwind CSS.
 
-## Demo
-
-🔗 [Live Site](https://dorischeng.vercel.app/)
+## Demo : 🔗 [My Portfolio - Hey 🩷 It's Doris Cheng 🩶 🩵](https://dorischeng.vercel.app/)
 
 ![Home page with hero section](./public/DorisCheng.png)
 ![Projects section](./public/DorisCheng_Projects.png)

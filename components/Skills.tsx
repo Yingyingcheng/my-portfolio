@@ -39,8 +39,8 @@ export default function Skills() {
             Me
           </h2>
           <p className="pt-5 text-lg md:text-xl mb-8 text-gray-700 font-medium">
-            I'm Doris (Ying Ying) Cheng. A designer and developer loves to
-            discove perfect harmony of color and space that makes a digital
+            I'm Doris (Ying Ying) Cheng. A designer and developer who loves to
+            discover the perfect harmony of color and space that makes a digital
             product feel alive.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[#8da399] uppercase tracking-widest text-xs leading-loose font-bold">

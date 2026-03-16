@@ -32,7 +32,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-block bg-[#8da399] text-white px-10 py-5 font-bold uppercase tracking-widest hover:bg-orange-600 transition-all duration-300"
             >
-              View My Protfolio
+              View My Resume
             </Link>
           </div>
         </div>

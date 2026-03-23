@@ -22,14 +22,13 @@ const projects = [
     git: "https://github.com/Yingyingcheng/y2k-flying-bananas",
   },
   {
-    title: "NextStep AI",
-    subtitle: "AI-Powered Interview Prep Platform",
-    tag: "Full Stack",
-    description:
-      "Ace your interview with AI-guided mastery\nMERN Stack · IBM LinuxOne Cloud",
-    image: "/NextStepAI.png",
-    link: "http://148.100.76.140/",
-    git: "https://github.com/Yingyingcheng/NextStep-AI",
+    title: "Doris Cheng",
+    subtitle: "My Portfolio",
+    tag: "Mobile App",
+    description: "Passionate at Web dev & design 🩵",
+    image: "/DorisCheng.png",
+    link: "https://dorischeng.vercel.app/",
+    git: "https://github.com/Yingyingcheng/my-portfolio",
   },
   {
     title: "MBTI Personality Test",

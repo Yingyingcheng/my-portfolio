@@ -29,8 +29,8 @@ export default function Skills() {
       id="skills"
       className="px-6 md:px-12 max-w-7xl mx-auto pt-16 pb-16 scroll-mt-24"
     >
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-        <Reveal className="md:col-span-6">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <Reveal className="lg:col-span-6">
           <span className="text-[#8da399] uppercase tracking-[0.3em] text-xs font-bold mb-4 block">
             The Story
           </span>
@@ -54,7 +54,7 @@ export default function Skills() {
             </p>
           </div>
         </Reveal>
-        <div className="md:col-span-6">
+        <div className="lg:col-span-6">
           <Reveal className="bg-[#8da399] hover:bg-amber-200 px-4 py-3 flex items-center relative ">
             <div className="flex gap-2">
               <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>

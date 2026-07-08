@@ -11,9 +11,9 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="px-6 md:px-12 pt-16 pb-16 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
-          <div className="md:col-span-6">
-            <h1 className="font-medium text-6xl md:text-[90px] leading-[0.85] tracking-tighter">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+          <div className="lg:col-span-6">
+            <h1 className="font-medium text-6xl md:text-[80px] lg:text-[90px] leading-[0.85] tracking-tighter">
               <span className="block motion-safe:animate-rise">Software</span>
               <span className="block motion-safe:animate-rise [animation-delay:120ms]">
                 Designer
@@ -25,7 +25,7 @@ export default function Home() {
           </div>
 
           {/* Intro Text & CTA */}
-          <div className="md:col-span-6 pb-4 motion-safe:animate-rise [animation-delay:400ms]">
+          <div className="lg:col-span-6 pb-4 motion-safe:animate-rise [animation-delay:400ms]">
             <p className="text-lg md:text-xl mb-8 text-gray-700 font-medium">
               Building clean, high-impact digital experiences that tell a story.
               <br></br>

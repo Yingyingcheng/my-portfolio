@@ -14,13 +14,18 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
           <div className="md:col-span-6">
             <h1 className="font-medium text-6xl md:text-[90px] leading-[0.85] tracking-tighter">
-              Software <br /> Designer <br />{" "}
-              <span className="text-[#8da399]">&</span> Dev
+              <span className="block motion-safe:animate-rise">Software</span>
+              <span className="block motion-safe:animate-rise [animation-delay:120ms]">
+                Designer
+              </span>
+              <span className="block motion-safe:animate-rise [animation-delay:240ms]">
+                <span className="text-[#8da399]">&</span> Dev
+              </span>
             </h1>
           </div>
 
           {/* Intro Text & CTA */}
-          <div className="md:col-span-6 pb-4">
+          <div className="md:col-span-6 pb-4 motion-safe:animate-rise [animation-delay:400ms]">
             <p className="text-lg md:text-xl mb-8 text-gray-700 font-medium">
               Building clean, high-impact digital experiences that tell a story.
               <br></br>
@@ -50,19 +55,23 @@ export default function Home() {
 
           <div className="pt-5 text-sm flex gap-8 ">
             <a
-              href="doris82717@gmail.com"
+              href="mailto:doris82717@gmail.com"
               className="font-bold uppercase tracking-widest  hover:text-orange-600 transition-colors"
             >
               Email
             </a>
             <a
               href="https://www.linkedin.com/in/yingying-cheng/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-bold uppercase tracking-widest hover:text-orange-600 transition-colors"
             >
               LinkedIn
             </a>
             <a
               href="https://github.com/Yingyingcheng"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-bold uppercase tracking-widest  hover:text-orange-600 transition-colors"
             >
               GitHub

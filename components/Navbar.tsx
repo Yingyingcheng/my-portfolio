@@ -9,11 +9,14 @@ export default function Navbar() {
     <>
       {/* Mobile Overlay */}
       <div
-        className={`fixed inset-0  bg-[#fffefea2] flex flex-col justify-center items-center transition-transform duration-500 ${isOpen ? "translate-y-0" : "-translate-y-full"}`}
+        aria-hidden={!isOpen}
+        className={`md:hidden fixed inset-0 z-40 bg-[#fffefea2] flex flex-col justify-center items-center transition-[transform,visibility] duration-500 ${isOpen ? "translate-y-0" : "-translate-y-full invisible pointer-events-none"}`}
       >
         <div className="flex flex-col bg-amber-200 space-y-4  text-center">
           <Link
             href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
             className="font-bold uppercase tracking-widest"
           >
@@ -64,7 +67,9 @@ export default function Navbar() {
         </div>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-bold  text-amber-50 uppercase tracking-widest]"
+          aria-expanded={isOpen}
+          aria-label="Toggle navigation menu"
+          className="md:hidden font-bold  text-amber-50 uppercase tracking-widest"
         >
           {isOpen ? "Close" : "Info"}{" "}
         </button>{" "}

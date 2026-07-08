@@ -1,3 +1,4 @@
+import Reveal from "./Reveal";
 import {
   SiJavascript,
   SiTypescript,
@@ -26,10 +27,10 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="px-6 md:px-12 max-w-7xl mx-auto pt-16 pb-16"
+      className="px-6 md:px-12 max-w-7xl mx-auto pt-16 pb-16 scroll-mt-24"
     >
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-        <div className="md:col-span-6">
+        <Reveal className="md:col-span-6">
           <span className="text-[#8da399] uppercase tracking-[0.3em] text-xs font-bold mb-4 block">
             The Story
           </span>
@@ -52,9 +53,9 @@ export default function Skills() {
               I'm obsessed with the way humans interact with digital spaces.
             </p>
           </div>
-        </div>
+        </Reveal>
         <div className="md:col-span-6">
-          <div className="bg-[#8da399] hover:bg-amber-200 px-4 py-3 flex items-center relative ">
+          <Reveal className="bg-[#8da399] hover:bg-amber-200 px-4 py-3 flex items-center relative ">
             <div className="flex gap-2">
               <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
               <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
@@ -63,11 +64,12 @@ export default function Skills() {
             <h2 className="absolute inset-0 flex items-center justify-center font-bold tracking-widest text-amber-200  hover:text-[#8da399]">
               Skills.tsx
             </h2>
-          </div>
+          </Reveal>
           <div className="grid grid-cols-3 md:grid-cols-3 gap-0">
             {skills.map((skill, index) => (
-              <div
-                key={index}
+              <Reveal
+                key={skill.name}
+                delay={index * 60}
                 className="group flex flex-col items-center justify-center p-6 transition-all duration-500 bg-amber-100"
               >
                 {/* Icon sizing and subtle color */}
@@ -78,7 +80,7 @@ export default function Skills() {
                 <span className="font-bold uppercase tracking-[0.2em] text-[10px] text-[#8da399] group-hover:text-orange-600 transition-colors">
                   {skill.name}
                 </span>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>

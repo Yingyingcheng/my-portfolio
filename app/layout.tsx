@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Doris Cheng",
-  description: "Built with Next.js and Tailwind CSS",
+  description: "Software Designer & Developer in San Francisco",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       },
       {
         url: "/android-chrome-512x512.png",
-        sizes: "192x192",
+        sizes: "512x512",
         type: "image/png",
       },
     ],

@@ -9,8 +9,27 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Doris Cheng",
-  description: "Software Designer & Developer in San Francisco",
+  metadataBase: new URL("https://dorischeng.vercel.app"),
+  title: "Doris Cheng — Software Designer & Developer",
+  description:
+    "Portfolio of Doris (Ying Ying) Cheng, a software designer and developer in San Francisco building clean, high-impact web experiences.",
+  openGraph: {
+    title: "Doris Cheng — Software Designer & Developer",
+    description:
+      "Portfolio of Doris (Ying Ying) Cheng, a software designer and developer in San Francisco.",
+    url: "https://dorischeng.vercel.app",
+    siteName: "Doris Cheng",
+    images: [{ url: "/DorisCheng.png", width: 1728, height: 1526 }],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Doris Cheng — Software Designer & Developer",
+    description:
+      "Portfolio of Doris (Ying Ying) Cheng, a software designer and developer in San Francisco.",
+    images: ["/DorisCheng.png"],
+  },
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },

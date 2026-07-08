@@ -55,13 +55,13 @@ export default function Skills() {
           </div>
         </Reveal>
         <div className="lg:col-span-6">
-          <Reveal className="bg-[#8da399] hover:bg-amber-200 px-4 py-3 flex items-center relative ">
+          <Reveal className="bg-[#8da399] hover:bg-orange-600 px-4 py-3 flex items-center relative ">
             <div className="flex gap-2">
               <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
               <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
               <div className="w-3 h-3 rounded-full bg-[#27C93F]"></div>
             </div>
-            <h2 className="absolute inset-0 flex items-center justify-center font-bold tracking-widest text-amber-200  hover:text-[#8da399]">
+            <h2 className="absolute inset-0 flex items-center justify-center font-bold tracking-widest text-amber-200  hover:text-white">
               Skills.tsx
             </h2>
           </Reveal>

@@ -2,7 +2,7 @@
 
 A personal portfolio website built with Next.js, React, and Tailwind CSS.
 
-## Demo : [My Portfolio - Hey 🩶 It's Doris Cheng 🩵](https://dorischeng.vercel.app/)
+**Live site:** [dorischeng.dev](https://dorischeng.dev/)
 
 ![Home page with hero section](./public/DorisCheng.png)
 ![Projects section](./public/DorisCheng_Projects.png)
@@ -18,7 +18,7 @@ A personal portfolio website built with Next.js, React, and Tailwind CSS.
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js 20.9+ (required by Next.js 16)
 - npm (or yarn/pnpm)
 
 ### Installation

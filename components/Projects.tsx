@@ -1,18 +1,7 @@
-import Image from "next/image";
-import { SiGithub } from "react-icons/si";
 import Reveal from "./Reveal";
-type Project = {
-  title: string;
-  subtitle: string;
-  description: string;
-  stack: string[];
-  image: string;
-  link?: string;
-  demo?: string;
-  git: string;
-};
+import ProjectCard, { type Project } from "./ProjectCard";
 
-const projects: Project[] = [
+const sideProjects: Project[] = [
   {
     title: "Foodie Diary",
     subtitle: "AI Calorie Tracker",
@@ -55,6 +44,49 @@ const projects: Project[] = [
   },
 ];
 
+/** Professional work shown first; side projects follow. */
+const shippedGames: Project[] = [
+  {
+    title: "Doodle Party",
+    subtitle: "Dual-Screen Draw & Guess Party Game · Fire TV",
+    description:
+      "Players draw on their phones and guess on the TV. Built the 50ms stroke-batching pipeline that cut sync backlog 80–95% on Fire OS, and shipped subscription gating and server-side scoring.",
+    stack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Colyseus",
+      "WebSockets",
+      "Fire OS",
+    ],
+    image: "/doodle-party-title.jpg",
+    video: "/doodle-party-loop.mp4",
+    link: "https://partymonster.app/games/doodle-party",
+    company: "Party Monster Games",
+  },
+  {
+    title: "Emoji Party",
+    subtitle: "Dual-Screen Emoji Puzzle Party Game · Fire TV",
+    description:
+      "Emoji reels spin on the TV and players race to type the answer on their phones. Built the real-time game room, server-side scoring, and subscription gating, and automated the Fire OS release pipeline.",
+    stack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Colyseus",
+      "WebSockets",
+      "Fire OS",
+    ],
+    image: "/emoji-party-title.jpg",
+    video: "/emoji-party-loop.mp4",
+    videoBg: "#000000",
+    link: "https://partymonster.app/games/emoji-party",
+    company: "Party Monster Games",
+  },
+];
+
+const projects: Project[] = [...shippedGames, ...sideProjects];
+
 export default function Projects() {
   return (
     <>
@@ -69,89 +101,19 @@ export default function Projects() {
           </h2>
         </Reveal>
 
-        <Reveal className="bg-[#8da399] hover:bg-orange-600 px-4 py-3 flex items-center relative ">
+        <Reveal className="group bg-bar hover:bg-bar-hover px-4 py-3 flex items-center relative transition-colors duration-300">
           <div className="flex gap-2">
             <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
             <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
             <div className="w-3 h-3 rounded-full bg-[#27C93F]"></div>
           </div>
-          <h2 className="absolute inset-0 flex items-center justify-center font-bold tracking-widest text-amber-200  hover:text-white">
+          <h2 className="absolute inset-0 flex items-center justify-center font-bold tracking-widest text-butter group-hover:text-white">
             Projects.tsx
           </h2>
         </Reveal>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 ">
-          {projects.map((project, index) => (
-            <Reveal
-              key={project.title}
-              delay={(index % 2) * 100}
-              className=" group text-center flex flex-col items-center justify-center p-6 bg-amber-100"
-            >
-              <div className="w-full mb-6 flex items-center justify-center transition-transform duration-700 group-hover:scale-95">
-                <div className="w-full bg-white p-2 border-2 border-dashed border-[#8da399] group-hover:border-blue-300 shadow-[0_12px_30px_-10px_rgba(141,163,153,0.6)] transition-colors duration-500">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={1728}
-                    height={1526}
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="w-full aspect-1728/1526 object-cover"
-                  />
-                </div>
-              </div>
-              <div className="font-medium text-3xl uppercase mb-6 text-[#8da399] group-hover:scale-90 transition-all duration-500">
-                {project.title}
-              </div>
-              <div className="font-bold text-sm uppercase tracking-[0.2em]  text-[#8da399] pb-2">
-                {project.subtitle}
-              </div>
-
-              <div className="flex flex-wrap justify-center gap-2 pb-5">
-                {project.stack.map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-[11px] font-bold uppercase tracking-widest   bg-orange-300 hover:bg-orange-500  text-white  transition-all duration-300 px-2 py-1"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <p className="pb-5 text-center text-base leading-relaxed text-gray-500 font-medium max-w-md whitespace-pre-line">
-                {project.description}
-              </p>
-
-              <div className="flex gap-2 mt-auto">
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[12px] bg-[#8da399] text-white px-4 py-3 font-bold uppercase tracking-widest hover:bg-orange-600 transition-all duration-300"
-                  >
-                    Website
-                  </a>
-                )}
-                {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[12px] bg-[#8da399] text-white px-4 py-3 font-bold uppercase tracking-widest hover:bg-orange-600 transition-all duration-300"
-                  >
-                    Demo
-                  </a>
-                )}
-                <a
-                  href={project.git}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center text-[12px] bg-[#8da399] text-white gap-2 px-4 py-3 font-bold uppercase tracking-widest hover:bg-orange-600 transition-all duration-300"
-                >
-                  <SiGithub className="text-sm" />
-                  GitHub
-                </a>
-              </div>
-            </Reveal>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
           ))}
         </div>
       </section>

@@ -5,7 +5,7 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f2c37c] text-[#1a1a1a] selection:bg-orange-200">
+    <main className="min-h-screen bg-paper text-ink selection:bg-orange-200">
       {/* Navigation Section */}
       <Navbar />
 
@@ -19,7 +19,7 @@ export default function Home() {
                 Designer
               </span>
               <span className="block motion-safe:animate-rise [animation-delay:240ms]">
-                <span className="text-[#8da399]">&</span> Developer
+                <span className="text-sage">&</span> Developer
               </span>
             </h1>
           </div>
@@ -35,7 +35,7 @@ export default function Home() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#8da399] text-white px-10 py-5 font-bold uppercase tracking-widest hover:bg-orange-600 transition-all duration-300"
+              className="inline-block bg-btn text-btn-text px-10 py-5 font-bold uppercase tracking-widest hover:bg-btn-hover hover:text-btn-hover-text transition-all duration-300"
             >
               View My Resume
             </Link>
@@ -47,7 +47,7 @@ export default function Home() {
       {/* {Project} */}
       <Projects />
       {/* --- Footer Section --- */}
-      <footer id="contact" className="w-full py-10 text-amber-50 bg-[#8da399]">
+      <footer id="contact" className="w-full py-10 text-chrome-text bg-chrome border-t-2 border-chrome-border">
         <div className="flex flex-col items-center max-w-7xl mx-auto ">
           <h2 className="text-xl font-bold uppercase tracking-wider leading-[0.8] text-center">
             Contacts
@@ -56,7 +56,7 @@ export default function Home() {
           <div className="pt-5 text-sm flex gap-8 ">
             <a
               href="mailto:doris82717@gmail.com"
-              className="font-bold uppercase tracking-widest  hover:text-orange-600 transition-colors"
+              className="font-bold uppercase tracking-widest hover:text-ember transition-colors"
             >
               Email
             </a>
@@ -64,7 +64,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/yingying-cheng/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold uppercase tracking-widest hover:text-orange-600 transition-colors"
+              className="font-bold uppercase tracking-widest hover:text-ember transition-colors"
             >
               LinkedIn
             </a>
@@ -72,7 +72,7 @@ export default function Home() {
               href="https://github.com/Yingyingcheng"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold uppercase tracking-widest  hover:text-orange-600 transition-colors"
+              className="font-bold uppercase tracking-widest hover:text-ember transition-colors"
             >
               GitHub
             </a>

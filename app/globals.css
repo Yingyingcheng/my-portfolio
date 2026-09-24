@@ -1,17 +1,41 @@
 @import "tailwindcss";
 
+/*
+  Site palette. Every component references these tokens, so the whole look
+  can be changed here.
+
+  Current: original "amber / sage" set — amber page, grey-blue (sage) chrome,
+  orange hover.
+*/
 :root {
   --background: #f2c37c;
   --foreground: #1a1a1a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-montserrat);
-}
-
 @theme {
+  --color-paper: #f2c37c; /* page background */
+  --color-ink: #1a1a1a; /* body text */
+  --color-card: #fef3c7; /* amber-100 card / tile background */
+  --color-sage: #8da399; /* grey-blue chrome + accents */
+  --color-ember: #ea580c; /* orange-600 hover */
+  --color-butter: #fde68a; /* amber-200 */
+
+  /*
+    Semantic "chrome" tokens. Components use these (bg-chrome, bg-bar, ...)
+    instead of raw colors so the nav/footer, section bars and buttons can be
+    re-themed from one place.
+  */
+  --color-chrome: #8da399; /* nav + footer background */
+  --color-chrome-text: #fffbeb;
+  --color-chrome-hover: #fde68a; /* nav link hover (amber-200) */
+  --color-chrome-border: transparent; /* rule under nav / above footer */
+  --color-bar: #8da399; /* Skills.tsx / Projects.tsx header bars */
+  --color-bar-hover: #ea580c;
+  --color-btn: #8da399; /* resume + card buttons */
+  --color-btn-text: #ffffff;
+  --color-btn-hover: #ea580c;
+  --color-btn-hover-text: #ffffff;
+
   --animate-rise: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 
   @keyframes rise {
@@ -24,6 +48,12 @@
       transform: translateY(0);
     }
   }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat);
 }
 
 html {

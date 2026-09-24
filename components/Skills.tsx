@@ -31,7 +31,7 @@ export default function Skills() {
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <Reveal className="lg:col-span-6">
-          <span className="text-[#8da399] uppercase tracking-[0.3em] text-xs font-bold mb-4 block">
+          <span className="text-sage uppercase tracking-[0.3em] text-xs font-bold mb-4 block">
             The Story
           </span>
           <h2 className="text-5xl md:text-6xl font-medium uppercase tracking-wider leading-[0.8] ">
@@ -44,7 +44,7 @@ export default function Skills() {
             discover the perfect harmony of color and space that makes a digital
             product feel alive.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[#8da399] uppercase tracking-widest text-xs leading-loose font-bold">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sage uppercase tracking-widest text-xs leading-loose font-bold">
             <p>
               I specialize in building web applications using the modern stack
               to let the core message shine.
@@ -55,13 +55,13 @@ export default function Skills() {
           </div>
         </Reveal>
         <div className="lg:col-span-6">
-          <Reveal className="bg-[#8da399] hover:bg-orange-600 px-4 py-3 flex items-center relative ">
+          <Reveal className="group bg-bar hover:bg-bar-hover px-4 py-3 flex items-center relative transition-colors duration-300">
             <div className="flex gap-2">
               <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
               <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
               <div className="w-3 h-3 rounded-full bg-[#27C93F]"></div>
             </div>
-            <h2 className="absolute inset-0 flex items-center justify-center font-bold tracking-widest text-amber-200  hover:text-white">
+            <h2 className="absolute inset-0 flex items-center justify-center font-bold tracking-widest text-butter group-hover:text-white">
               Skills.tsx
             </h2>
           </Reveal>
@@ -70,14 +70,14 @@ export default function Skills() {
               <Reveal
                 key={skill.name}
                 delay={index * 60}
-                className="group flex flex-col items-center justify-center p-6 transition-all duration-500 bg-amber-100"
+                className="group flex flex-col items-center justify-center p-6 transition-all duration-500 bg-card"
               >
                 {/* Icon sizing and subtle color */}
-                <div className="text-5xl mb-6 text-[#8da399] group-hover:text-orange-600 group-hover:scale-110 transition-all duration-500">
+                <div className="text-5xl mb-6 text-sage group-hover:text-ember group-hover:scale-110 transition-all duration-500">
                   {skill.icon}
                 </div>
 
-                <span className="font-bold uppercase tracking-[0.2em] text-[10px] text-[#8da399] group-hover:text-orange-600 transition-colors">
+                <span className="font-bold uppercase tracking-[0.2em] text-[10px] text-sage group-hover:text-ember transition-colors">
                   {skill.name}
                 </span>
               </Reveal>

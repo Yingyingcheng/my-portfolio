@@ -21,10 +21,12 @@ const contacts = [
 ];
 
 const news = [
+  "👻 New here? Click any file on the desktop to open it",
+  "🔴 Click the red dot to close a window, just like on a Mac",
   "🎧 On repeat: 浴室 by Deca Joins",
-  "📚 New on my shelf: Yesteryear by Caro Claire Burke",
-  "🐈 My ginger cat is sleeping",
-  "⌨️ Psst, open Terminal in the dock and type help",
+  "👀 New on my shelf: Yesteryear by Caro Claire Burke",
+  "😽 My ginger cat is sleeping",
+  "💬 Psst, open Terminal in the dock and type help",
 ];
 
 const sfTime = new Intl.DateTimeFormat("en-US", {

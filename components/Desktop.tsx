@@ -192,21 +192,50 @@ function useIsDesktop() {
 
 function AboutMe() {
   return (
-    <div className="p-6 sm:p-8">
-      <h1 className="font-medium text-2xl sm:text-3xl leading-[0.95] tracking-tighter">
-        Software Designer
-        <br />
-        <span className="text-accent">&</span> Developer
-      </h1>
-      <p className="max-w-lg mt-5 text-base font-medium">
-        Hi, I&apos;m Doris (Ying Ying) Cheng, and I love discovering the perfect
-        harmony of color and space that makes a digital product feel alive.
-      </p>
-      <p className="max-w-lg mt-3 text-base font-medium">
-        Oh, and my favorite thing is reading books with my ginger cat on weekend
-        nights.
-      </p>
-    </div>
+    <>
+      <div className="p-6 sm:p-8">
+        <h1 className="font-medium text-2xl sm:text-3xl leading-[0.95] tracking-tighter">
+          Software Designer
+          <br />
+          <span className="text-accent">&</span> Developer
+        </h1>
+        <p className="max-w-lg mt-5 text-base font-medium">
+          Hi, I&apos;m Doris (Ying Ying) Cheng, and I love discovering the
+          perfect harmony of color and space that makes a digital product feel
+          alive.
+        </p>
+        <p className="max-w-lg mt-3 text-base font-medium">
+          Oh, and my favorite thing is reading books with my ginger cat on
+          weekend nights.
+        </p>
+      </div>
+      <div className="flex flex-col gap-1 px-3 py-2 border-t-2 border-ink font-mono text-[11px] font-bold text-heading">
+        <p className="flex items-center justify-between gap-2">
+          <span className="lg:hidden">Tap a file below, like Resume.pdf</span>
+          <span className="hidden lg:inline">
+            Click a file on the right to open it, like Resume.pdf
+          </span>
+          <span
+            aria-hidden="true"
+            className="grid place-items-center w-3 text-accent motion-safe:animate-pulse"
+          >
+            <span className="lg:hidden">↓</span>
+            <span className="hidden lg:inline">→</span>
+          </span>
+        </p>
+        <p className="flex items-center justify-between gap-2">
+          <span className="lg:hidden">
+            Tap Close or the red dot to close a window
+          </span>
+          <span className="hidden lg:inline">
+            Click the red dot to close a window, just like on a Mac
+          </span>
+          <span aria-hidden="true" className="grid place-items-center w-3">
+            <span className="w-2 h-2 rounded-full bg-[#FF5F56]" />
+          </span>
+        </p>
+      </div>
+    </>
   );
 }
 

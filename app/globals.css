@@ -1,43 +1,28 @@
 @import "tailwindcss";
 
-/*
-  Site palette. Every component references these tokens, so the whole look
-  can be changed here.
-
-  Current: original "amber / sage" set — amber page, grey-blue (sage) chrome,
-  orange hover.
-*/
-:root {
-  --background: #f2c37c;
-  --foreground: #1a1a1a;
-}
-
+/* Peach & Denim */
 @theme {
-  --color-paper: #f2c37c; /* page background */
-  --color-ink: #1a1a1a; /* body text */
-  --color-card: #fef3c7; /* amber-100 card / tile background */
-  --color-sage: #8da399; /* grey-blue chrome + accents */
-  --color-ember: #ea580c; /* orange-600 hover */
-  --color-butter: #fde68a; /* amber-200 */
+  --color-paper: #fdf0e6; /* page */
+  --color-surface: #fff8f1; /* window bodies */
+  --color-ink: #1d2433;
+  --color-muted: #5c5f6b; /* body copy */
+  --color-line: #5b8fc9; /* icon outlines, dock, dividers */
+  --color-heading: #3f74b0; /* dates, links, project titles (4.3:1 on paper) */
+  --color-accent: #f0714f; /* "&", hovers */
+  --color-highlight: #ffd9b3; /* logo, navbar clock, terminal prompt */
+  --color-tag: #ffcfae;
+  --color-tag-text: #8a3b12;
 
-  /*
-    Semantic "chrome" tokens. Components use these (bg-chrome, bg-bar, ...)
-    instead of raw colors so the nav/footer, section bars and buttons can be
-    re-themed from one place.
-  */
-  --color-chrome: #8da399; /* nav + footer background */
-  --color-chrome-text: #fffbeb;
-  --color-chrome-hover: #fde68a; /* nav link hover (amber-200) */
-  --color-chrome-border: transparent; /* rule under nav / above footer */
-  --color-bar: #8da399; /* Skills.tsx / Projects.tsx header bars */
-  --color-bar-hover: #ea580c;
-  --color-btn: #8da399; /* resume + card buttons */
+  --color-chrome: #5b8fc9;
+  --color-chrome-text: #ffffff;
+  --color-bar: #1d2433;
+  --color-bar-title: #ffd9b3;
+  --color-btn: #5b8fc9;
   --color-btn-text: #ffffff;
-  --color-btn-hover: #ea580c;
+  --color-btn-hover: #f0714f;
   --color-btn-hover-text: #ffffff;
 
   --animate-rise: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
-
   @keyframes rise {
     from {
       opacity: 0;
@@ -48,12 +33,23 @@
       transform: translateY(0);
     }
   }
+
+  --animate-marquee: marquee 45s linear infinite;
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-montserrat);
+  --font-mono: var(--font-space-mono);
+  --font-file: var(--font-space-mono); /* file names: icons, window titles */
+}
+
+@utility window-shadow {
+  box-shadow: 6px 6px 0 color-mix(in oklab, var(--color-ink) 22%, transparent);
 }
 
 html {
@@ -61,7 +57,6 @@ html {
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Montserrat, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
 }

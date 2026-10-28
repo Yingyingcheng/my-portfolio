@@ -9,82 +9,43 @@ import {
   SiDocker,
   SiTailwindcss,
   SiNextdotjs,
+  SiThreedotjs,
+  SiExpress,
+  SiMongodb,
 } from "react-icons/si";
 
-const skills = [
+export const skills = [
   { name: "JavaScript", icon: <SiJavascript /> },
   { name: "TypeScript", icon: <SiTypescript /> },
   { name: "Python", icon: <SiPython /> },
   { name: "React", icon: <SiReact /> },
   { name: "Next", icon: <SiNextdotjs /> },
-  { name: "Node", icon: <SiNodedotjs /> },
-  { name: "PostgreSQL", icon: <SiPostgresql /> },
-  { name: "Docker", icon: <SiDocker /> },
+  { name: "Three.js", icon: <SiThreedotjs /> },
   { name: "Tailwind", icon: <SiTailwindcss /> },
+  { name: "Node", icon: <SiNodedotjs /> },
+  { name: "Express", icon: <SiExpress /> },
+  { name: "PostgreSQL", icon: <SiPostgresql /> },
+  { name: "MongoDB", icon: <SiMongodb /> },
+  { name: "Docker", icon: <SiDocker /> },
 ];
 
-export default function Skills() {
+export default function SkillsGrid() {
   return (
-    <section
-      id="skills"
-      className="px-6 md:px-12 max-w-7xl mx-auto pt-16 pb-16 scroll-mt-24"
-    >
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        <Reveal className="lg:col-span-6">
-          <span className="text-sage uppercase tracking-[0.3em] text-xs font-bold mb-4 block">
-            The Story
+    <div className="grid grid-cols-3 sm:grid-cols-4">
+      {skills.map((skill, index) => (
+        <Reveal
+          key={skill.name}
+          delay={index * 40}
+          className="group flex flex-col items-center justify-center px-3 py-6 ring-1 ring-inset ring-line/20"
+        >
+          <div className="text-4xl mb-4 text-line group-hover:text-accent group-hover:scale-110 transition-all duration-500">
+            {skill.icon}
+          </div>
+          <span className="font-bold uppercase tracking-[0.2em] text-[10px] text-heading group-hover:text-accent transition-colors">
+            {skill.name}
           </span>
-          <h2 className="text-5xl md:text-6xl font-medium uppercase tracking-wider leading-[0.8] ">
-            About
-            <br />
-            Me
-          </h2>
-          <p className="pt-5 text-lg md:text-xl mb-8 text-gray-700 font-medium">
-            I'm Doris (Ying Ying) Cheng. A designer and developer who loves to
-            discover the perfect harmony of color and space that makes a digital
-            product feel alive.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sage uppercase tracking-widest text-xs leading-loose font-bold">
-            <p>
-              I specialize in building web applications using the modern stack
-              to let the core message shine.
-            </p>
-            <p>
-              I'm obsessed with the way humans interact with digital spaces.
-            </p>
-          </div>
         </Reveal>
-        <div className="lg:col-span-6">
-          <Reveal className="group bg-bar hover:bg-bar-hover px-4 py-3 flex items-center relative transition-colors duration-300">
-            <div className="flex gap-2">
-              <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
-              <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
-              <div className="w-3 h-3 rounded-full bg-[#27C93F]"></div>
-            </div>
-            <h2 className="absolute inset-0 flex items-center justify-center font-bold tracking-widest text-butter group-hover:text-white">
-              Skills.tsx
-            </h2>
-          </Reveal>
-          <div className="grid grid-cols-3 md:grid-cols-3 gap-0">
-            {skills.map((skill, index) => (
-              <Reveal
-                key={skill.name}
-                delay={index * 60}
-                className="group flex flex-col items-center justify-center p-6 transition-all duration-500 bg-card"
-              >
-                {/* Icon sizing and subtle color */}
-                <div className="text-5xl mb-6 text-sage group-hover:text-ember group-hover:scale-110 transition-all duration-500">
-                  {skill.icon}
-                </div>
-
-                <span className="font-bold uppercase tracking-[0.2em] text-[10px] text-sage group-hover:text-ember transition-colors">
-                  {skill.name}
-                </span>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
 }

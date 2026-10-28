@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google"; // Only keep Montserrat
+import { Montserrat, Space_Mono } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -8,6 +8,11 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-space-mono",
+});
 export const metadata: Metadata = {
   metadataBase: new URL("https://dorischeng.dev"),
   title: "Doris Cheng — Software Designer & Developer",
@@ -66,7 +71,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} font-sans antialiased`}>
+      <body
+        className={`${montserrat.variable} ${spaceMono.variable} font-sans antialiased`}
+      >
         {children}
       </body>
     </html>
